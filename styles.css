@@ -24,13 +24,80 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: chocolate;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.main {
+  padding: 24px 16px;
 }
 
+.notifications {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  & .title {
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    font-size: 1.25em; /* 20px */
+    word-spacing: 9px;
+  }
+  & .number {
+    background-color: var(--Blue);
+    color: var(--White);
+    border-radius: 6px;
+    padding: 4px 10px;
+  }
+  & .mark {
+    color: var(--Dark-grayish-blue);
+    font-size: 0.875em; /* 14px */
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      color: var(--Blue);
+    }
+  
+}
+}
+
+.post {
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 8px;
+  display: flex;
+  gap: 13px;
+  padding: 16px;
+  font-size: 0.875em; /* 14px */
+  cursor: pointer;
+  color: var(--Dark-grayish-blue);
+  & .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  & .name {
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+    &:hover {
+      color: var(--Blue);
+    }
+  }
+  & .reaction {
+    font-weight: bold;
+    &:hover {
+      color: var(--Blue);
+    }
+  }
+  & .not-read {
+    display: inline-block;
+    background-color: var(--Red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  & .time {
+    color: var(--Grayish-blue);
+    font-size: 0.875em; /* 14px */
+    font-weight: 500;
+  }
+  
+ 
+}
