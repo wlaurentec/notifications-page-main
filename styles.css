@@ -24,7 +24,6 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: chocolate;
 }
 
 .main {
@@ -67,7 +66,9 @@ body {
   padding: 16px;
   font-size: 0.875em; /* 14px */
   cursor: pointer;
+  margin: 0 auto 10px;
   color: var(--Dark-grayish-blue);
+  position: relative;
   & .avatar {
     width: 40px;
     height: 40px;
@@ -98,6 +99,31 @@ body {
     font-size: 0.875em; /* 14px */
     font-weight: 500;
   }
-  
- 
+  & .group {
+    color: var(--Blue);
+    font-weight: bold;
+  }
+ & .message-container {
+  border: 1px solid var(--Light-grayish-blue-2);
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 12px;
+  &:hover {
+    background-color: var(--Light-grayish-blue-1);
+  }
+ }
+ & .picture {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 16px;
+ }
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
